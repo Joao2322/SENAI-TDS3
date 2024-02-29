@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#p1">Perfil 01</a></li>
+            <!-- Perfil 02 removido -->
+            <li><a href="#tec">Tecnologias</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+    <div id="p1" class="profile01">
+        <div class="left-profile01">
+            <div class="rel">
+                <img class="img-01" src="./img/imgpf.png" alt="Imagem de perfil">
+            </div>
+        </div>
+        <div class="right-profile02">
+            <h2 class="nome-p1">João Pedro Dutra de Lima</h2>
+            <p class="p-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae numquam consequuntur tempore quae rerum laboriosam soluta error? Doloribus suscipit, unde vel repudiandae nulla maiores dolore modi. Voluptas, modi dolorem?</p>
+        </div>
+    </div>
+    <div id="tec" class="tec">
+        <h2>Tecnologias</h2>
+        <div class="flex-cards">
+            <div class="card_html">
+                <img src="./img/html.webp" alt="html" width="100px" height="auto">
+                <p>HTML (HyperText Markup Language) é uma linguagem de marcação utilizada para criar a estrutura e o conteúdo de páginas da web. Ele fornece os elementos necessários, como cabeçalhos, parágrafos, imagens e links, para organizar e apresentar informações na internet.</p>
+            </div>
+            <div class="card_css">
+                <img src="./img/css.webp" alt="css" width="100px" height="auto">
+                <p>CSS (Cascading Style Sheets) é uma linguagem de estilo que complementa o HTML. Com o CSS, você pode controlar o layout, o design e a aparência visual de uma página da web. Isso inclui definições de cores, fontes, espaçamento, alinhamento e outros aspectos estéticos.</p>
+            </div>
+            <div class="card_js">
+                <img src="./img/js.webp" alt="java" width="100px" height="auto">
+                <p>JavaScript é uma linguagem de programação usada para adicionar interatividade e dinamismo às páginas da web. Com JavaScript, é possível criar animações, responder a eventos do usuário e manipular o conteúdo da página em tempo real.</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="wrap-divs-contact">
+            <div>
+                <h3>Contato</h3>
+                <p>Mande uma mensagem para nossa equipe!</p>
+            </div>
+            <div>
+                <div>
+                    <input class="input-style01" type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <textarea class="input-style01" type="text" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                </div>
+            </div>
+            <button onclick="conferirMesagemWhatsApp()">Conferir dados inseridos</button>
+        </div>
+        <div class="wrap-divs-contact">
+            <div>
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+            </div>
+            <button onclick="enviar()">ZAP</button>
+        </div>
+    </div>
+</body>
+</html>
